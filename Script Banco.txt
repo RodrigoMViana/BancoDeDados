@@ -1,0 +1,46 @@
+
+
+
+create table aluno (
+id_aluno serial primary key,
+	nome varchar(40),
+	telefone char(11),
+	email varchar(40)
+);
+
+create table professor (
+id_professor serial primary key,
+	nome varchar(40),
+	cpf char(11),
+	telefone char(11),
+	email varchar(40)
+);
+
+create table materia (
+	materia varchar(40),
+	aluno char(11),
+	professor varchar(40),
+	media char (2)
+);
+
+
+INSERT INTO ALUNO (nome,telefone,email)
+VALUES ('MARIA JOAQUINA DE SOUSA','81999999999','MJOAQUINA@GMAIL.COM');
+
+INSERT INTO ALUNO (nome,telefone,email)
+VALUES ('RICARDO DA SILVA COSTA','81988888888','RSILVA@GMAIL.COM');
+
+INSERT INTO ALUNO (NOME, TELEFONE, EMAIL)
+VALUES ('LUIZ DA LIMA', '81977777777','LLIMA@GMAIL.COM');
+
+INSERT INTO PROFESSOR (nome,cpf,telefone,email)
+VALUES ('JANIO QUADROS DA SILVA','89589589589','81944444444','JQUADROS@GMAIL.COM');
+
+INSERT INTO PROFESSOR (nome,cpf,telefone,email)
+VALUES ('ADALBERTO DE BRITO','98698698698','81955555555','ABRITO@GMAIL.COM');
+
+INSERT INTO PROFESSOR (nome,cpf,telefone,email)
+VALUES ('FIRMINO DE PAULA','86986986986','81966666666','FPAULA@GMAIL.COM');
+
+INSERT INTO  MATERIA(MATERIA,MEDIA)
+VALUES ('PORTUGUÊS','10');
